@@ -62,6 +62,8 @@ b. Product Functions
 
 * graduation process
 
+* dropping out of the university
+
 c. User Characteristics
 
 * Students: Primary users interacting with the system for academic management
