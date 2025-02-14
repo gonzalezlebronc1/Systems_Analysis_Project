@@ -21,53 +21,53 @@ This document covers the first analysis phase, including system requirements, co
 
 c. Definitions & Acronyms
 
-DFD: Data Flow Diagram
+* DFD: Data Flow Diagram
 
-ERD: Entity Relationship Diagram
+* ERD: Entity Relationship Diagram
 
-Use Case: A model of the system and how user interactions with the system
+* Use Case: A model of the system and how user interactions with the system
 
 d. References
 
-University of Dayton system requirements
+* University of Dayton system requirements
 
 e. Overview
 
 The document is structured as follows:
 
-Introduction
+1. Introduction
 
-a. Purpose
+* Purpose
 
-b. Scope
+* Scope
 
-c. Definitions & Acronyms
+* Definitions & Acronyms
 
-d. References
+* References
 
-e. Overview
-
-
-Overall Description
-
-a.Product Perspective
-
-b. Product Functions
-
-c. User Characteristics
-
-d. Constraints
-
-e. Assumptions
+* Overview
 
 
-Systems Analysis 
+2. Overall Description
 
-a. Context level data flow diagram
+* Product Perspective
 
-b. Context level entity relationship diagram
+* Product Functions
 
-c. Use Cases
+* User Characteristics
+
+* Constraints
+
+* Assumptions
+
+
+3. Systems Analysis 
+
+* Context level data flow diagram
+
+* Context level entity relationship diagram
+
+* Use Cases
 
 
 2. Overall Description
@@ -78,34 +78,34 @@ The system's goal is to interface with the student management and university dat
 
 b. Product Functions
 
-applying to the university
+* applying to the university
 
- scheduling classes
+* scheduling classes
 
-withdrawing from a class 
+* withdrawing from a class 
 
-final class grade submission
+* final class grade submission
 
-changing your major 
+* changing your major 
 
-viewing your transcript
+* viewing your transcript
 
-graduation process
+* graduation process
 
 c. User Characteristics
 
-Students: Primary users interacting with the system for academic management
+* Students: Primary users interacting with the system for academic management
 
-Administrators: Manage student records and approve requests
+* Administrators: Manage student records and approve requests
 
-Professors: Submit final grades
+* Professors: Submit final grades
 
 d. Constraints
 
-Web-based with mobile compatibility
+* Web-based with mobile compatibility
 
 e. Assumptions
 
-Users have basic technical proficiency
+* Users have basic technical proficiency
 
-University maintains up-to-date records
+* University maintains up-to-date records
