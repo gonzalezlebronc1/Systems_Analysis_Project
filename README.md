@@ -8,7 +8,7 @@ Anthony Boykin
 
 CPS 310 - Phase 1 - System Overview & Use Cases
 
-1. Introduction
+**1. Introduction**
 
 a. Purpose
 
@@ -70,7 +70,7 @@ The document is structured as follows:
 * Use Cases
 
 
-2. Overall Description
+**2. Overall Description**
 
 a. Product Perspective
 
