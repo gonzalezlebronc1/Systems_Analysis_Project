@@ -10,64 +10,34 @@ CPS 310 - Phase 1 - System Overview & Use Cases
 
 **1. Introduction**
 
-a. Purpose
+	a. Purpose
 
-This document outlines the system analysis for a university process management system. The goal is to improved
-system tasks such as applying to the university, scheduling classes, withdrawing from a class, final grade submission, changing majors, viewing transcripts, and graduation.
+	This document outlines the system analysis for a university process management system. The goal is to improved
+	system tasks such as applying to the university, scheduling classes, withdrawing from a class, final grade submission, changing majors, viewing transcripts, and graduation.
 
-b. Scope
+	b. Scope
 
-This document covers the first analysis phase, including system requirements, context diagrams, and use case definitions. 
+	This document covers the first analysis phase, including system requirements, context diagrams, and use case definitions. 
 
-c. Definitions & Acronyms
+	c. Definitions & Acronyms
 
-* DFD: Data Flow Diagram
+	* DFD: Data Flow Diagram
 
-* ERD: Entity Relationship Diagram
+	* ERD: Entity Relationship Diagram
 
-* Use Case: A model of the system and how user interactions with the system
+	* Use Case: A model of the system and how user interactions with the system
 
-d. References
+	d. References
 
-* University of Dayton system requirements
+	* University of Dayton system requirements
 
-e. Overview
+	e. Overview
 
-The document is structured as follows:
+	The document will provide an overview of the environment that this system must operate within,
+	including other software and hardware systems that will interface with this system. An overview of the features to be provided by the software.
+	Description of the types of users that will interact with this software and assumed properties of those users. Any constraints that have been placed on the project 
+	(that are not, in themselves, requirements). Any assumptions that are being made in specifying these requirements.
 
-1. Introduction
-
-* Purpose
-
-* Scope
-
-* Definitions & Acronyms
-
-* References
-
-* Overview
-
-
-2. Overall Description
-
-* Product Perspective
-
-* Product Functions
-
-* User Characteristics
-
-* Constraints
-
-* Assumptions
-
-
-3. Systems Analysis 
-
-* Context level data flow diagram
-
-* Context level entity relationship diagram
-
-* Use Cases
 
 
 **2. Overall Description**
