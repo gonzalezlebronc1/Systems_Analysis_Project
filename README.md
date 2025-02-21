@@ -47,7 +47,7 @@ CPS 310 - Phase 1 - System Overview & Use Cases
 **2. Overall Description**  
 
 *Product Perspective*  
-&nbsp;&nbsp;&nbsp;&nbsp;The system's goal is to interface with the student management and university databases that are currently in place. 
+&nbsp;&nbsp;&nbsp;&nbsp;The system's goal is to interface with the student management and university databases that are currently in place.  
 &nbsp;&nbsp;&nbsp;&nbsp;It will act as a focal point for managing administrative procedures for students.  
 
 *Product Functions*  
