@@ -76,5 +76,5 @@ CPS 310 - Phase 1 - System Overview & Use Cases
 **3. Systems Analysis** 
 
 *Context Level Data Flow Diagram*
-&nbsp;&nbsp;&nbsp;&nbsp;The Context-Level Data Flow Diagram includes the main process representing the University's processing system. The entities include the students both enrolled and not yet enrolled,   
-&nbsp;&nbsp;&nbsp;&nbsp;the faculty who manage approvals and update records via the system, and finally the staff who store and retrieve records.
+&nbsp;&nbsp;&nbsp;&nbsp;The Context-Level Data Flow Diagram includes the main process representing the University's processing system. The entities include the students both enrolled  
+&nbsp;&nbsp;&nbsp;&nbsp;and not yet enrolled, the faculty who manage approvals and update records via the system, and finally the staff who store and retrieve records.
