@@ -11,6 +11,7 @@ Preconditions: Student meets eligibility requirements.
 Postconditions: Application is accepted or rejected. 
 Alternate Scenarios: Application requires additional documentation. 
 Exception Scenarios: System downtime prevents submission.
+
 Use Case 2: Scheduling Classes
 Actors: Student, Teacher, Administrator
 Description: The student registers for classes, with potential approval from a teacher or administrator.
@@ -25,6 +26,7 @@ Preconditions: Student is eligible for enrollment.
 Postconditions: Student is successfully enrolled in classes. 
 Alternate Scenarios: Class is full, student is waitlisted. 
 Exception Scenarios: System error prevents registration.
+
 Use Case 3: Withdrawing from a Class
 Actors: Student, Teacher, Administrator
 Description: A student requests to withdraw from a class, requiring approval.
@@ -38,6 +40,7 @@ Preconditions: Student is enrolled in the class.
 Postconditions: Withdrawal is recorded. 
 Alternate Scenarios: Student decides to stay in the class. 
 Exception Scenarios: System error prevents withdrawal.
+
 Use Case 4: Final Class Grade Submission
 Actors: Student, Teacher
 Description: A teacher submits final grades, allowing students to view them.
@@ -51,6 +54,7 @@ Preconditions: Student has completed coursework.
 Postconditions: Final grades are recorded. 
 Alternate Scenarios: Teacher requests grade change. 
 Exception Scenarios: System prevents submission due to an error.
+
 Use Case 5: Changing Your Major
 Actors: Student, Administrator
 Description: A student submits a request to change majors, which is approved by an administrator.
@@ -63,6 +67,7 @@ Preconditions: Student meets major change requirements.
 Postconditions: Student’s major is updated.
 Alternate Scenarios: Major change requires additional approval. 
 Exception Scenarios: System prevents the request due to missing prerequisites.
+
 Use Case 6: Viewing Your Transcript
 Actors: Student, Teacher, Administrator
 Description: A student or authorized user requests to view the transcript.
@@ -76,16 +81,26 @@ Preconditions: Student has a valid account.
 Postconditions: Transcript is accessed. 
 Alternate Scenarios: Administrator prints transcript.
 Exception Scenarios: System downtime prevents retrieval.
+
+
 Use Case 7: Graduation Process
+
 Actors: Student, Administrator
+
 Description: A student applies for graduation, which is processed by an administrator.
+
 Triggering Event: Student submits a graduation request.
+
 Steps Performed with Needed Information:
-      1. Student applies for graduation.
-      2. System verifies requirements.
-      3. Administrator approves graduation.
-      4. System updates student records.
+   1. Student applies for graduation.
+   2. System verifies requirements.
+   3. Administrator approves graduation.
+   4. System updates student records.
+
 Preconditions: Student meets graduation criteria. 
+
 Postconditions: Student is marked as a graduate. 
+
 Alternate Scenarios: Student defers graduation. 
+
 Exception Scenarios: System fails to process graduation request.
