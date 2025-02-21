@@ -76,5 +76,21 @@ CPS 310 - Phase 1 - System Overview & Use Cases
 **3. Systems Analysis**  
 
 *Context Level Data Flow Diagram*  
-&nbsp;&nbsp;&nbsp;&nbsp;The Context-Level Data Flow Diagram includes the main process representing the University's processing system. The entities include the students both enrolled  
-&nbsp;&nbsp;&nbsp;&nbsp;and not yet enrolled, the faculty who manage approvals and update records via the system, and finally the staff who store and retrieve records.  
+&nbsp;&nbsp;&nbsp;&nbsp;The Context-Level Data Flow Diagram includes the main process representing the University's processing system. The entities include the  
+&nbsp;&nbsp;&nbsp;&nbsp;students both enrolled and not yet enrolled, the faculty who manage approvals and  
+&nbsp;&nbsp;&nbsp;&nbsp;update records via the system, and finally the staff who store and retrieve records.  
+
+*Entity-Relationship Diagram*  
+&nbsp;&nbsp;&nbsp;&nbsp;The Entity-Relationship Diagram models the University Process Management System, capturing essential entities and their interactions.  
+&nbsp;&nbsp;&nbsp;&nbsp;The primary entities include **Student, Graduation, Transcript, Major, University, Class, Professor, and Faculty**, each representing a core  
+&nbsp;&nbsp;&nbsp;&nbsp;component of university operations. Students interact with multiple processes through associative entities such as **Graduation Status,  
+&nbsp;&nbsp;&nbsp;&nbsp;Grade Record, Application, Grade Submission, Teaching Assignment, Enrollment, Major Assignment, and Schedule**.  
+
+&nbsp;&nbsp;&nbsp;&nbsp;A **Student** is linked to **Graduation Status** to track their eligibility for **Graduation** and maintains a **Grade Record** associated  
+&nbsp;&nbsp;&nbsp;&nbsp;with their **Transcript**. Course participation is managed through **Enrollment** and **Schedule**, ensuring students are properly  
+&nbsp;&nbsp;&nbsp;&nbsp;registered for **Classes**. A **Student** is assigned a **Major** via **Major Assignment**, which connects to both the **University**  
+&nbsp;&nbsp;&nbsp;&nbsp;and the **Faculty** responsible for the program.  
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Professors** are affiliated with a **Faculty** and take on **Teaching Assignments** for **Classes**, submitting **Grade Submissions**  
+&nbsp;&nbsp;&nbsp;&nbsp;to evaluate student performance. **Students** apply to the **University** through the **Application** process, which determines admission status  
+
