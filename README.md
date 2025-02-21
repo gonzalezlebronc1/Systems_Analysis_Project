@@ -94,5 +94,6 @@ CPS 310 - Phase 1 - System Overview & Use Cases
 &nbsp;&nbsp;&nbsp;&nbsp;**Professors** are affiliated with a **Faculty** and take on **Teaching Assignments** for **Classes**, submitting **Grade Submissions**  
 &nbsp;&nbsp;&nbsp;&nbsp;to evaluate student performance. **Students** apply to the **University** through the **Application** process, which determines admission status  
 
-*USE CASE SCENARIOS*
-&nbsp;&nbsp;&nbsp;&nbsp;The Use Case Scenarios section provides an overview of how different actors interact with the university system. Information about USE CASE SCENARIOS is contained in the case file.
+*USE CASE SCENARIOS*  
+&nbsp;&nbsp;&nbsp;&nbsp;The Use Case Scenarios section provides an overview of how different actors interact with the university system.  
+&nbsp;&nbsp;&nbsp;&nbsp;Information about USE CASE SCENARIOS is contained in the case file.  
