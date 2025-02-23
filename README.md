@@ -6,6 +6,8 @@ Phillip Phuong
 
 Anthony Boykin
 
+Carola Gonzalez
+
 CPS 310 - Phase 1 - System Overview & Use Cases
 
 **1. Introduction**  
