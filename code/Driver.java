@@ -9,8 +9,16 @@ public class Driver {
         UniversitySystem university = new UniversitySystem();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Do you want to apply to the University of Dayton? (yes/no)");
-        String response = scanner.nextLine().trim().toLowerCase();
+        // Validate application decision
+        String response;
+        while (true) {
+            System.out.println("Do you want to apply to the University of Dayton? (yes/no)");
+            response = scanner.nextLine().trim().toLowerCase();
+            if (response.equals("yes") || response.equals("no")) {
+                break;
+            }
+            System.out.println("Invalid input. Please enter 'yes' or 'no'.");
+        }
 
         if (!response.equals("yes")) {
             System.out.println("Application process canceled.");
@@ -19,13 +27,39 @@ public class Driver {
         }
 
         // Student applies
-        System.out.println("\nEnter Student Name:");
-        String name = scanner.nextLine();
-        System.out.println("Enter Student Age:");
-        int age = scanner.nextInt();
-        scanner.nextLine();  // Consume newline
-        System.out.println("Enter Student Email:");
-        String email = scanner.nextLine();
+        String name;
+        do {
+            System.out.println("\nEnter Student Name:");
+            name = scanner.nextLine().trim();
+            if (name.isEmpty()) {
+                System.out.println("Name cannot be empty. Please try again.");
+            }
+        } while (name.isEmpty());
+
+        int age;
+        while (true) {
+            System.out.println("Enter Student Age:");
+            if (scanner.hasNextInt()) {
+                age = scanner.nextInt();
+                if (age > 0) {
+                    scanner.nextLine();
+                    break;
+                }
+            } else {
+                scanner.next(); 
+            }
+            System.out.println("Invalid age. Please enter a valid positive number.");
+        }
+
+        String email;
+        do {
+            System.out.println("Enter Student Email:");
+            email = scanner.nextLine().trim();
+            if (!email.contains("@") || !email.contains(".")) {
+                System.out.println("Invalid email format. Please enter a valid email.");
+                email = "";
+            }
+        } while (email.isEmpty());
 
         Student student = new Student(name, age, email);
         university.submitApplication(student);
