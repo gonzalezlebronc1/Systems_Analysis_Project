@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.File;
 
 //University system handling applications
 class UniversitySystem {
@@ -22,6 +25,9 @@ class UniversitySystem {
          app.reject();
          System.out.println("Auto-Decision: Application REJECTED for " + student.getName());
      }
+
+     //log application details to file
+     logApplication(app);
  }
  public void reviewApplications() {
      Scanner scanner = new Scanner(System.in);
@@ -47,4 +53,18 @@ class UniversitySystem {
          System.out.println(app.getStudent().getName() + " - " + app.getStatus());
      }
  }
+
+ public void logApplication(Application app) {
+        try {
+            File file = new File("application_log.txt"); // Creates the file if it doesn't exist
+            FileWriter writer = new FileWriter(file, true); // true = append mode
+            writer.write(app.getStudent().getName() + " - " + app.getStudent().getEmail() + " - " + app.getStatus() + "\n");
+            writer.close(); // Ensure data is flushed and written to file
+            System.out.println("Application logged successfully.");
+
+        } catch (IOException e) {
+            System.out.println("Error writing to log file: " + e.getMessage());
+        }
+
+    }
 }
