@@ -11,7 +11,7 @@ Class Data
 Course Enrollment Information
 
 **Description:**  
-*(Leave blank for now)*  
+This data store holds information about class registration, withdrawals, and rosters.  
 
 **File Type:**  
 Computer
@@ -34,7 +34,8 @@ Class_ID
 **Secondary Key:**  
 Student_ID
 
-**Comments:**  
+**Comments:**
+This data store is primarily accessed by faculty for class information and student rosters.  
 ---
 
 ## 2. D2 - Course Database   
@@ -48,7 +49,7 @@ Course Database
 Course Information Storage
 
 **Description:**  
-
+This database contains course information such as course name, code, faculty details, and grades.
 
 **File Type:**  
 Computer
@@ -71,7 +72,8 @@ Course_ID
 **Secondary Key:**  
 Faculty_ID, Student_ID
 
-**Comments:**  
+**Comments:**
+This database helps in maintaining academic records, grades, and course details.  
 ---
 
 ## 3. D3- Application Record  
@@ -85,6 +87,7 @@ Application Records
 Student Application Database
 
 **Description:**  
+This data store holds information about student applications, their status, and associated documents.
 
 **File Type:**  
 Computer
@@ -107,7 +110,8 @@ Application_ID
 **Secondary Key:**  
 Student_ID
 
-**Comments:**  
+**Comments:**
+This data store is mostly accessed by staff for processing student applications.  
 ---
 
 ## 4. Student Record  
@@ -121,9 +125,9 @@ Student Record
 Student Data File
 
 **Description:**  
+This file contains all records related to students, including major change requests, enrollment details, and academic history.
 
 **File Type:**  
-
 Computer
 
 **Format:**  
@@ -144,7 +148,8 @@ Student_ID
 **Secondary Key:**  
 Major_ID, Class_ID
 
-**Comments:**  
+**Comments:** 
+This data store is essential for tracking student progress and academic changes. 
 ---
 
 ## 5. Administrative Records  
@@ -157,7 +162,8 @@ Administrative Records
 **Alias:**  
 Student Status Records 
 
-**Description:**  
+**Description:**
+This data store contains information related to graduation, dropout status, and other administrative records.  
 
 **File Type:**  
 Computer
@@ -180,4 +186,5 @@ Record_ID
 **Secondary Key:**  
 Student_ID
 
-**Comments:**  
+**Comments:**
+Staff primarily accesses this data for administrative purposes like processing graduation or dropout cases.  
