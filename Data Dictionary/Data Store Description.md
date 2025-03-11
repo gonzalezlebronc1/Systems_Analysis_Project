@@ -36,6 +36,7 @@ Student_ID
 
 **Comments:**
 This data store is primarily accessed by faculty for class information and student rosters.  
+
 ---
 
 ## 2. D2 - Course Database   
@@ -74,6 +75,7 @@ Faculty_ID, Student_ID
 
 **Comments:**
 This database helps in maintaining academic records, grades, and course details.  
+
 ---
 
 ## 3. D3- Application Record  
@@ -112,6 +114,7 @@ Student_ID
 
 **Comments:**
 This data store is mostly accessed by staff for processing student applications.  
+
 ---
 
 ## 4. Student Record  
@@ -150,6 +153,7 @@ Major_ID, Class_ID
 
 **Comments:** 
 This data store is essential for tracking student progress and academic changes. 
+
 ---
 
 ## 5. Administrative Records  
