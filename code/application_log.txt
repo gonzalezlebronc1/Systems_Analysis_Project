@@ -1,0 +1,6 @@
+test - test@gmail.com - Rejected
+John Doe - jdoe@gmail.com - Rejected
+G.R - gr@gmail.com - Accepted
+gislain - rg1@gmail.com - Rejected
+gislain - gr@gmail.com - Rejected
+Gislain - gr@gmail.com - Rejected
