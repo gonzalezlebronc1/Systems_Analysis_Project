@@ -98,7 +98,7 @@ Student Status Records
 This data store contains information related to graduation, dropout status, and other administrative records.  
 
 **Data Structure Name:**  
-AdminRecord
+Administrative Records
 
 **Comments:**
 Staff primarily accesses this data for administrative purposes like processing graduation or dropout cases.  
