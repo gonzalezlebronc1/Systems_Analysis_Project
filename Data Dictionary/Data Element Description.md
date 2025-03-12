@@ -1,7 +1,8 @@
 # Data Structures
 
 ## Student  
-Student = StudentID +  
+Student =  
+&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
 &nbsp;&nbsp;&nbsp;&nbsp;Name +  
 &nbsp;&nbsp;&nbsp;&nbsp;DOB +  
 &nbsp;&nbsp;&nbsp;&nbsp;Major +  
@@ -11,14 +12,16 @@ Student = StudentID +
 ---
 
 ## Faculty  
-Faculty = FacultyID +  
+Faculty =  
+&nbsp;&nbsp;&nbsp;&nbsp;FacultyID +  
 &nbsp;&nbsp;&nbsp;&nbsp;Name +  
 &nbsp;&nbsp;&nbsp;&nbsp;Department  
 
 ---
 
 ## ClassData  
-ClassData = ClassID +  
+ClassData =  
+&nbsp;&nbsp;&nbsp;&nbsp;ClassID +  
 &nbsp;&nbsp;&nbsp;&nbsp;CourseID +  
 &nbsp;&nbsp;&nbsp;&nbsp;FacultyID +  
 &nbsp;&nbsp;&nbsp;&nbsp;Term +  
@@ -28,7 +31,8 @@ ClassData = ClassID +
 ---
 
 ## CourseDatabase  
-CourseDatabase = CourseID +  
+CourseDatabase =  
+&nbsp;&nbsp;&nbsp;&nbsp;CourseID +  
 &nbsp;&nbsp;&nbsp;&nbsp;CourseName +  
 &nbsp;&nbsp;&nbsp;&nbsp;Description +  
 &nbsp;&nbsp;&nbsp;&nbsp;(Prerequisites = {CourseID}) +  
@@ -37,7 +41,8 @@ CourseDatabase = CourseID +
 ---
 
 ## Grades  
-Grades = GradeID +  
+Grades =  
+&nbsp;&nbsp;&nbsp;&nbsp;GradeID +  
 &nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
 &nbsp;&nbsp;&nbsp;&nbsp;ClassID +  
 &nbsp;&nbsp;&nbsp;&nbsp;AssignmentID +  
@@ -47,7 +52,8 @@ Grades = GradeID +
 ---
 
 ## ApplicationRecords  
-ApplicationRecords = ApplicationID +  
+ApplicationRecords =  
+&nbsp;&nbsp;&nbsp;&nbsp;ApplicationID +  
 &nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
 &nbsp;&nbsp;&nbsp;&nbsp;Status +  
 &nbsp;&nbsp;&nbsp;&nbsp;(ReviewerNotes) +  
@@ -56,7 +62,8 @@ ApplicationRecords = ApplicationID +
 ---
 
 ## StudentRecords  
-StudentRecords = StudentID +  
+StudentRecords =  
+&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
 &nbsp;&nbsp;&nbsp;&nbsp;CurrentMajor +  
 &nbsp;&nbsp;&nbsp;&nbsp;(NewMajor) +  
 &nbsp;&nbsp;&nbsp;&nbsp;Status +  
@@ -66,7 +73,8 @@ StudentRecords = StudentID +
 ---
 
 ## AdministrativeRecords  
-AdministrativeRecords = StudentID +  
+AdministrativeRecords =  
+&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
 &nbsp;&nbsp;&nbsp;&nbsp;[ GraduationStatus +  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CompletionDate +  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DegreeAwarded |  
@@ -77,7 +85,8 @@ AdministrativeRecords = StudentID +
 ---
 
 ## Roster  
-Roster = RosterID +  
+Roster =  
+&nbsp;&nbsp;&nbsp;&nbsp;RosterID +  
 &nbsp;&nbsp;&nbsp;&nbsp;ClassID +  
 &nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
 &nbsp;&nbsp;&nbsp;&nbsp;Term +  
