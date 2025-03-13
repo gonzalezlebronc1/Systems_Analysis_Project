@@ -94,4 +94,59 @@ Roster =
 
 ---
 
+## Withdrawal  
+Withdrawal =  
+&nbsp;&nbsp;&nbsp;&nbsp;WithdrawalID +  
+&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
+&nbsp;&nbsp;&nbsp;&nbsp;ClassID +  
+&nbsp;&nbsp;&nbsp;&nbsp;WithdrawalDate +  
+&nbsp;&nbsp;&nbsp;&nbsp;(Reason)  
+
+---
+
+## MajorChangeRequest  
+MajorChangeRequest =  
+&nbsp;&nbsp;&nbsp;&nbsp;RequestID +  
+&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
+&nbsp;&nbsp;&nbsp;&nbsp;CurrentMajor +  
+&nbsp;&nbsp;&nbsp;&nbsp;(NewMajor) +  
+&nbsp;&nbsp;&nbsp;&nbsp;Status +  
+&nbsp;&nbsp;&nbsp;&nbsp;(DecisionDate) +  
+&nbsp;&nbsp;&nbsp;&nbsp;(Comments)  
+
+---
+
+## RegistrationRequest  
+RegistrationRequest =  
+&nbsp;&nbsp;&nbsp;&nbsp;RequestID +  
+&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
+&nbsp;&nbsp;&nbsp;&nbsp;ClassID +  
+&nbsp;&nbsp;&nbsp;&nbsp;Term  
+
+---
+
+## RequestApproval  
+RequestApproval =  
+&nbsp;&nbsp;&nbsp;&nbsp;RequestID +  
+&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
+&nbsp;&nbsp;&nbsp;&nbsp;ClassID +  
+&nbsp;&nbsp;&nbsp;&nbsp;ApprovalStatus  
+
+---
+
+## Prerequisites  
+Prerequisites =  
+&nbsp;&nbsp;&nbsp;&nbsp;{CourseID}  
+
+---
+
+## RequestNotification  
+RequestNotification =  
+&nbsp;&nbsp;&nbsp;&nbsp;RequestID +  
+&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
+&nbsp;&nbsp;&nbsp;&nbsp;ClassID +  
+&nbsp;&nbsp;&nbsp;&nbsp;EnrollmentStatus  
+
+---
+
 # Data Element Descriptions
