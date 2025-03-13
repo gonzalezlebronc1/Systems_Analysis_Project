@@ -128,7 +128,7 @@ This data flow triggers the administrative process for recording a dropout and u
 
 # Data Flow Descriptions for Process 1 and Process 2 with Data Store D1  
 
-## 8. Roster (Process 1 → D1)  
+## 8. Roster  
 **Description:**  
 Represents the class roster generated or updated during the class registration process, including student details and class assignments.  
 
@@ -146,7 +146,7 @@ This data flow updates the class data store to reflect newly registered students
 
 ---
 
-## 9. Roster (D1 → Process 1)  
+## 9. Roster  
 **Description:**  
 Represents the existing class roster retrieved from the class data store to verify class availability and enrollment status.  
 
@@ -164,7 +164,7 @@ This data flow ensures that students are only registered for available classes.
 
 ---
 
-## 10. Withdrawals (Process 2 → D1)  
+## 10. Withdrawals  
 **Description:**  
 Represents a record of a student’s class withdrawal, including student and class information.  
 
@@ -182,7 +182,7 @@ This data flow updates the class data store to reflect the student's withdrawal.
 
 ---
 
-## 11. Withdrawals (D1 → Process 2)  
+## 11. Withdrawals  
 **Description:**  
 Represents a request to retrieve withdrawal records from the class data store to confirm class withdrawal status.  
 
@@ -202,7 +202,7 @@ This data flow ensures that the system confirms a withdrawal before processing a
 
 # Data Flow Descriptions for External Entity: Faculty and Process 3 with Data Stores  
 
-## 12. Class Information (Faculty → D1)  
+## 12. Class Information  
 **Description:**  
 Contains information about the classes taught by the faculty member, including class schedules, capacity, and instructor details.  
 
@@ -220,7 +220,7 @@ This data flow updates the class data store with current class information provi
 
 ---
 
-## 13. Course Information (Faculty → D2)  
+## 13. Course Information  
 **Description:**  
 Contains information about courses offered by the faculty, including course descriptions, prerequisites, and credit hours.  
 
@@ -238,7 +238,7 @@ This data flow updates the course database with new or revised course details.
 
 ---
 
-## 14. Course Information (D2 → Faculty)  
+## 14. Course Information  
 **Description:**  
 Represents course information retrieved from the course database, including schedules, requirements, and enrollment limits.  
 
@@ -256,7 +256,7 @@ This data flow allows faculty to verify or update course details.
 
 ---
 
-## 15. Grades (Process 3 → D2)  
+## 15. Grades  
 **Description:**  
 Contains student grade information submitted by the faculty member, including student ID, class ID, and grade.  
 
@@ -274,7 +274,7 @@ This data flow updates the course database with student grades.
 
 ---
 
-## 16. Grades (D2 → Process 3)  
+## 16. Grades  
 **Description:**  
 Represents existing grade records retrieved from the course database for review or modification.  
 
