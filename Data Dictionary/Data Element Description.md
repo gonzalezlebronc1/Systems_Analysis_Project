@@ -1,152 +1,58 @@
-# Data Structures
+# **Data Elements**
 
-## Student  
-Student =  
-&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
-&nbsp;&nbsp;&nbsp;&nbsp;Name +  
-&nbsp;&nbsp;&nbsp;&nbsp;DOB +  
-&nbsp;&nbsp;&nbsp;&nbsp;Major +  
-&nbsp;&nbsp;&nbsp;&nbsp;AcademicStatus +  
-&nbsp;&nbsp;&nbsp;&nbsp;GraduationEligibility  
-
----
-
-## Faculty  
-Faculty =  
-&nbsp;&nbsp;&nbsp;&nbsp;FacultyID +  
-&nbsp;&nbsp;&nbsp;&nbsp;Name +  
-&nbsp;&nbsp;&nbsp;&nbsp;Department  
+## **Grades**  
+| **Element** | **Alias** | **Description** | **Type** | **Base/Derived** | **Validation Criteria** | **Default Value** | **Comments** |
+|------------|-----------|----------------|----------|------------------|------------------------|------------------|--------------|
+| **GradeID** | GradeIdentifier | Unique identifier for the grade record | Integer | Base | Positive integer | None | None |
+| **StudentID** | StudentRef | Reference to the student receiving the grade | Integer | Base | Must match existing StudentID in Student structure | None | None |
+| **ClassID** | ClassRef | Reference to the class where the grade was assigned | Integer | Base | Must match existing ClassID in ClassData structure | None | None |
+| **AssignmentID** | AssignmentRef | Identifier for the specific assignment | Integer | Base | Positive integer | None | None |
+| **Grade** | Score | Actual grade value assigned to the student | Float | Base | Between 0.0 and 100.0 | None | None |
+| **DateSubmitted** | SubmissionDate | Date when the grade was recorded | Date | Base | Valid date format (YYYY-MM-DD) | None | None |
 
 ---
 
-## ClassData  
-ClassData =  
-&nbsp;&nbsp;&nbsp;&nbsp;ClassID +  
-&nbsp;&nbsp;&nbsp;&nbsp;CourseID +  
-&nbsp;&nbsp;&nbsp;&nbsp;FacultyID +  
-&nbsp;&nbsp;&nbsp;&nbsp;Term +  
-&nbsp;&nbsp;&nbsp;&nbsp;Capacity +  
-&nbsp;&nbsp;&nbsp;&nbsp;EnrolledStudents  
+## **Application Records**  
+| **Element** | **Alias** | **Description** | **Type** | **Base/Derived** | **Validation Criteria** | **Default Value** | **Comments** |
+|------------|-----------|----------------|----------|------------------|------------------------|------------------|--------------|
+| **ApplicationID** | AppRef | Unique identifier for the application record | Integer | Base | Positive integer | None | None |
+| **StudentID** | ApplicantRef | Reference to the student submitting the application | Integer | Base | Must match existing StudentID in Student structure | None | None |
+| **Status** | AppStatus | Current status of the application | String | Base | "Pending", "Approved", or "Rejected" | "Pending" | None |
+| **ReviewerNotes** | ReviewComments | Notes from the reviewer about the application | String | Derived | None | None | Optional |
+| **DecisionDate** | DecisionTimestamp | Date when the final decision was made | Date | Derived | Valid date format (YYYY-MM-DD) | None | None |
 
 ---
 
-## CourseDatabase  
-CourseDatabase =  
-&nbsp;&nbsp;&nbsp;&nbsp;CourseID +  
-&nbsp;&nbsp;&nbsp;&nbsp;CourseName +  
-&nbsp;&nbsp;&nbsp;&nbsp;Description +  
-&nbsp;&nbsp;&nbsp;&nbsp;(Prerequisites = {CourseID}) +  
-&nbsp;&nbsp;&nbsp;&nbsp;Credits  
+## **Withdrawal**  
+| **Element** | **Alias** | **Description** | **Type** | **Base/Derived** | **Validation Criteria** | **Default Value** | **Comments** |
+|------------|-----------|----------------|----------|------------------|------------------------|------------------|--------------|
+| **WithdrawalID** | WithdrawRef | Unique identifier for the withdrawal record | Integer | Base | Positive integer | None | None |
+| **StudentID** | StudentRef | Reference to the student withdrawing from the class | Integer | Base | Must match existing StudentID in Student structure | None | None |
+| **ClassID** | ClassRef | Reference to the class being withdrawn from | Integer | Base | Must match existing ClassID in ClassData structure | None | None |
+| **WithdrawalDate** | WithdrawDate | Date when the withdrawal occurred | Date | Base | Valid date format (YYYY-MM-DD) | None | None |
+| **Reason** | WithdrawReason | Explanation for the withdrawal | String | Derived | None | None | Optional |
 
 ---
 
-## Grades  
-Grades =  
-&nbsp;&nbsp;&nbsp;&nbsp;GradeID +  
-&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
-&nbsp;&nbsp;&nbsp;&nbsp;ClassID +  
-&nbsp;&nbsp;&nbsp;&nbsp;AssignmentID +  
-&nbsp;&nbsp;&nbsp;&nbsp;Grade +  
-&nbsp;&nbsp;&nbsp;&nbsp;DateSubmitted  
+## **Student**  
+| **Element** | **Alias** | **Description** | **Type** | **Base/Derived** | **Validation Criteria** | **Default Value** | **Comments** |
+|------------|-----------|----------------|----------|------------------|------------------------|------------------|--------------|
+| **StudentID** | ID | Unique identifier for a student | Integer | Base | Positive, unique | None | None |
+| **Name** | FullName | Student’s full legal name | String | Base | Not null, max length 100 characters | None | None |
+| **DOB** | DateOfBirth | Student’s date of birth | Date | Base | Must be valid date, not in future | None | None |
+| **Major** | FieldOfStudy | Student’s current major | String | Base | Must match predefined list of majors | None | None |
+| **AcademicStatus** | Standing | Student’s academic standing (e.g., Good, Probation) | String | Derived | Must match predefined list of statuses | "Good" | None |
+| **GraduationEligibility** | EligibleToGraduate | Whether the student meets graduation requirements | Boolean | Derived | True or False | False | None |
 
 ---
 
-## ApplicationRecords  
-ApplicationRecords =  
-&nbsp;&nbsp;&nbsp;&nbsp;ApplicationID +  
-&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
-&nbsp;&nbsp;&nbsp;&nbsp;Status +  
-&nbsp;&nbsp;&nbsp;&nbsp;(ReviewerNotes) +  
-&nbsp;&nbsp;&nbsp;&nbsp;DecisionDate  
+## **ClassData**  
+| **Element** | **Alias** | **Description** | **Type** | **Base/Derived** | **Validation Criteria** | **Default Value** | **Comments** |
+|------------|-----------|----------------|----------|------------------|------------------------|------------------|--------------|
+| **ClassID** | ID | Unique identifier for a class | Integer | Base | Positive, unique | None | Primary key |
+| **CourseID** | CID | Identifier for the related course | Integer | Base | Must match an existing course ID | None | None |
+| **FacultyID** | InstructorID | Identifier for the faculty teaching the class | Integer | Base | Must match an existing faculty ID | None | None |
+| **Term** | Semester | Academic term (e.g., Fall 2025) | String | Base | Valid term format (e.g., "Fall YYYY") | None | None |
+| **Capacity** | MaxEnrollment | Maximum number of students allowed | Integer | Base | Positive integer | None | None |
+| **EnrolledStudents** | CurrentEnrollment | Number of students currently enrolled | Integer | Derived | Cannot exceed Capacity | 0 | None |
 
----
-
-## StudentRecords  
-StudentRecords =  
-&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
-&nbsp;&nbsp;&nbsp;&nbsp;CurrentMajor +  
-&nbsp;&nbsp;&nbsp;&nbsp;(NewMajor) +  
-&nbsp;&nbsp;&nbsp;&nbsp;Status +  
-&nbsp;&nbsp;&nbsp;&nbsp;(DecisionDate) +  
-&nbsp;&nbsp;&nbsp;&nbsp;(Comments)  
-
----
-
-## AdministrativeRecords  
-AdministrativeRecords =  
-&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
-&nbsp;&nbsp;&nbsp;&nbsp;[ GraduationStatus +  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CompletionDate +  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DegreeAwarded |  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DropoutStatus +  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DropoutDate +  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reason ]  
-
----
-
-## Roster  
-Roster =  
-&nbsp;&nbsp;&nbsp;&nbsp;RosterID +  
-&nbsp;&nbsp;&nbsp;&nbsp;ClassID +  
-&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
-&nbsp;&nbsp;&nbsp;&nbsp;Term +  
-&nbsp;&nbsp;&nbsp;&nbsp;Status  
-
----
-
-## Withdrawal  
-Withdrawal =  
-&nbsp;&nbsp;&nbsp;&nbsp;WithdrawalID +  
-&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
-&nbsp;&nbsp;&nbsp;&nbsp;ClassID +  
-&nbsp;&nbsp;&nbsp;&nbsp;WithdrawalDate +  
-&nbsp;&nbsp;&nbsp;&nbsp;(Reason)  
-
----
-
-## MajorChangeRequest  
-MajorChangeRequest =  
-&nbsp;&nbsp;&nbsp;&nbsp;RequestID +  
-&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
-&nbsp;&nbsp;&nbsp;&nbsp;CurrentMajor +  
-&nbsp;&nbsp;&nbsp;&nbsp;(NewMajor) +  
-&nbsp;&nbsp;&nbsp;&nbsp;Status +  
-&nbsp;&nbsp;&nbsp;&nbsp;(DecisionDate) +  
-&nbsp;&nbsp;&nbsp;&nbsp;(Comments)  
-
----
-
-## RegistrationRequest  
-RegistrationRequest =  
-&nbsp;&nbsp;&nbsp;&nbsp;RequestID +  
-&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
-&nbsp;&nbsp;&nbsp;&nbsp;ClassID +  
-&nbsp;&nbsp;&nbsp;&nbsp;Term  
-
----
-
-## RequestApproval  
-RequestApproval =  
-&nbsp;&nbsp;&nbsp;&nbsp;RequestID +  
-&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
-&nbsp;&nbsp;&nbsp;&nbsp;ClassID +  
-&nbsp;&nbsp;&nbsp;&nbsp;ApprovalStatus  
-
----
-
-## Prerequisites  
-Prerequisites =  
-&nbsp;&nbsp;&nbsp;&nbsp;{CourseID}  
-
----
-
-## RequestNotification  
-RequestNotification =  
-&nbsp;&nbsp;&nbsp;&nbsp;RequestID +  
-&nbsp;&nbsp;&nbsp;&nbsp;StudentID +  
-&nbsp;&nbsp;&nbsp;&nbsp;ClassID +  
-&nbsp;&nbsp;&nbsp;&nbsp;EnrollmentStatus  
-
----
-
-# Data Element Descriptions
