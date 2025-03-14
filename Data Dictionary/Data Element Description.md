@@ -49,7 +49,7 @@
 ## **ClassData**  
 | **Element** | **Alias** | **Description** | **Type** | **Base/Derived** | **Validation Criteria** | **Default Value** | **Comments** |
 |------------|-----------|----------------|----------|------------------|------------------------|------------------|--------------|
-| **ClassID** | ID | Unique identifier for a class | Integer | Base | Positive, unique | None | Primary key |
+| **ClassID** | ClassRef | Unique identifier for a class | Integer | Base | Positive, unique | None | Primary key |
 | **CourseID** | CID | Identifier for the related course | Integer | Base | Must match an existing course ID | None | None |
 | **FacultyID** | InstructorID | Identifier for the faculty teaching the class | Integer | Base | Must match an existing faculty ID | None | None |
 | **Term** | Semester | Academic term (e.g., Fall 2025) | String | Base | Valid term format (e.g., "Fall YYYY") | None | None |
