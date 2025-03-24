@@ -189,7 +189,7 @@ Descriptions of individual data elements, including their types and meanings, ar
 ---
 
 ### Process Specification  
-Detailed specifications for each process in the system, including logic and rules are provided in the [Process Specification](Data%20Dictionary/Process%20Specification folder.  
+Detailed specifications for each process in the system, including logic and rules are provided in the [Process Specification](Data%20Dictionary/Process%20Specification) folder.  
 
 #### **All Current Process Specification**  
 [Process 1.1](Data%20Dictionary/Process%20Specification/Process%20Specifications.pdf)  
