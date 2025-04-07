@@ -1,4 +1,7 @@
-//Represents a student applying to the university
+import java.util.ArrayList;
+
+import java.util.List;
+
 
 class Student {
 
@@ -9,6 +12,8 @@ class Student {
     private String email;
 
     private String major;
+
+    private List<Course> enrolledCourses = new ArrayList<>();
 
 
     public Student(String name, int age, String email, String major) {
@@ -33,6 +38,8 @@ class Student {
     public String getMajor() { return major; }
 
 
+    // Major change
+
     public void requestMajorChange(String newMajor, UniversitySystem system) {
 
         system.processMajorChange(this, newMajor);
@@ -44,7 +51,18 @@ class Student {
 
         this.major = newMajor;
 
-        System.out.println(name + " has successfully changed their major to " + newMajor);
+        System.out.println(name + " has changed major to " + newMajor);
+
+    }
+
+
+    // Enroll in course
+
+    public void enrollInCourse(Course course) {
+
+        enrolledCourses.add(course);
+
+        System.out.println(name + " has enrolled in " + course.getCourseName());
 
     }
 

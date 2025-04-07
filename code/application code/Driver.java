@@ -191,6 +191,58 @@ public class Driver {
 
         }
 
+        
+
+     // Enroll in course if accepted
+
+        if (university.isAccepted(student)) {
+
+            String enrollResponse;
+
+            while (true) {
+
+                System.out.println("\nWould you like to enroll in a course? (yes/no)");
+
+                enrollResponse = scanner.nextLine().trim().toLowerCase();
+
+                if (enrollResponse.equals("yes") || enrollResponse.equals("no")) {
+
+                    break;
+
+                }
+
+                System.out.println("Invalid input. Please enter 'yes' or 'no'.");
+
+            }
+
+
+            if (enrollResponse.equals("yes")) {
+
+                String courseName;
+
+                do {
+
+                    System.out.println("Enter course name to enroll in:");
+
+                    courseName = scanner.nextLine().trim();
+
+                    if (courseName.isEmpty()) {
+
+                        System.out.println("Course name cannot be empty. Please try again.");
+
+                    }
+
+                } while (courseName.isEmpty());
+
+
+                Course course = new Course(courseName);
+
+                student.enrollInCourse(course);
+
+            }
+
+        }
+
         scanner.close();
 
     }
