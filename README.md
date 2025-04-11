@@ -38,6 +38,30 @@ A data dictionary is a collection of detailed information about the data element
 **Process Specification**  
 A process specification defines the logic, rules, and data flows involved in a specific process within a system. It provides a detailed description of how inputs are transformed into outputs.  
 
+**UML (Unified Modeling Language)**  
+UML is a standardized modeling language used to visualize, specify, construct, and document the artifacts of a software system. It provides various diagram types  
+to represent different aspects of the system.  
+
+**Activity Diagram**  
+An activity diagram is a type of UML diagram that illustrates the dynamic aspects of a system by modeling the workflow from one activity to another, showing  
+decision points, parallel processes, and start/end points.  
+
+**Class Diagram**  
+A class diagram represents the static structure of a system by showing its classes, attributes, methods, and the relationships between objects. It is used to model  
+the object-oriented view of a system.  
+
+**Sequence Diagram**  
+A sequence diagram is a UML interaction diagram that shows how objects interact with each other over time. It details the sequence of messages exchanged between objects  
+to accomplish a specific functionality.  
+
+**Communication Diagram**  
+A communication diagram (also known as a collaboration diagram) shows the interactions between objects or parts using sequenced messages. Unlike sequence diagrams,  
+the focus is on the structure of the interaction rather than the time sequence.  
+
+**Statechart Diagram**  
+A statechart diagram (also known as a state machine diagram) models the different states of an object and transitions between those states based on events or conditions.  
+It is used to describe the behavior of a system in response to external and internal events.  
+
 ### References  
 - University of Dayton system requirements  
 
@@ -234,3 +258,17 @@ Due to the requirements of Phase 2 and the time constraints, the following proce
      - Approving or denying the request.  
      - Updating student records.  
      Each of these could be a distinct child process.
+
+---
+
+**CPS 310 – Phase 3 – UML, Activity Diagrams, Class Diagrams, Sequence/Communication Diagrams, State Chart Diagrams**  
+
+---
+
+### Activity Diagrams  
+
+### Class Diagrams  
+
+### Sequence/Communication Diagrams  
+
+### State Chart Diagrams  
