@@ -268,7 +268,34 @@ Due to the requirements of Phase 2 and the time constraints, the following proce
 ### Activity Diagrams  
 
 ### Class Diagrams  
+The following is the class diagram of the static structure of the university system  
+
+![Class Diagram](UML%20Diagrams/Class%20Diagrams/Class%20Diagram.drawio.png)  
 
 ### Sequence/Communication Diagrams  
+Sequence interaction diagrams that shows how objects interact with each other over time.  
+Due to the nature and requirements of the project only sequence diagrams were made.  
+
+[Apply for Graduation](UML%20Diagrams/Sequence.Communication%20Diagrams/Apply%20for%20graduation.jpg)  
+[Request Major change](UML%20Diagrams/Sequence.Communication%20Diagrams/Request%20major%20change.jpg)  
+[Request Transcript](UML%20Diagrams/Sequence.Communication%20Diagrams/Request%20transcript.jpg)  
+[Request Withdrawal](UML%20Diagrams/Sequence.Communication%20Diagrams/Request%20withdrawal.jpg)  
+[Scheduling Classes](UML%20Diagrams/Sequence.Communication%20Diagrams/Scheduling%20Classes.jpg)  
+[Submit Applications](UML%20Diagrams/Sequence.Communication%20Diagrams/Submit%20Application.jpg)  
+[Submit Schedule Form](UML%20Diagrams/Sequence.Communication%20Diagrams/Submit%Schedule%Form.jpg)  
+[Submit Grade](UML%20Diagrams/Sequence.Communication%20Diagrams/Submit%20grade.jpg)  
 
 ### State Chart Diagrams  
+Statechart diagrams that models the different states of an object and transitions based on the class diagrams.  
+
+[Application](UML%20Diagrams/Statechart%20Diagrams/Application.png)  
+[Course](UML%20Diagrams/Statechart%20Diagrams/Course.png)  
+[Graduation Request](UML%20Diagrams/Statechart%20Diagrams/GraduationRequest.png)  
+[Major Change Request](UML%20Diagrams/Statechart%20Diagrams/MajorChangeRequest.png)  
+[Request](UML%20Diagrams/Statechart%20Diagrams/Request.png)  
+[Student](UML%20Diagrams/Statechart%20Diagrams/Student.png)  
+[Teaching Scheudle Form](UML%20Diagrams/Statechart%20Diagrams/TeachingScheduleForm.png)  
+[Withdrawal Request](UML%20Diagrams/Statechart%20Diagrams/WithdrawalRequest.png)  
+
+#### Classes Without State Chart Diagram  
+Certain classes do not need state chart diagrams as they do not meet the requirements or is unecessary.  
