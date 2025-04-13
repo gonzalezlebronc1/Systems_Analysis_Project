@@ -48,7 +48,7 @@ public class Driver {
 
         String name;
 
-        do {
+        while (true) {
 
             System.out.println("\nEnter Student Name:");
 
@@ -58,9 +58,16 @@ public class Driver {
 
                 System.out.println("Name cannot be empty. Please try again.");
 
-            }
+            } else if (!name.matches("^[a-zA-Z ]+$")) {
 
-        } while (name.isEmpty());
+                System.out.println("Invalid name. Only alphabetic characters are allowed.");
+            
+            } else {
+
+                break;
+
+            }
+        }
 
 
         int age;
@@ -69,11 +76,11 @@ public class Driver {
 
             System.out.println("Enter Student Age:");
 
-            if (scanner.hasNextInt()) {
+            String ageInput = scanner.nextLine().trim();
 
-                age = scanner.nextInt();
+            if (ageInput.matches("^\\d{1,3}$")) {
 
-                scanner.nextLine();
+                age = Integer.parseInt(ageInput);
 
                 if (age > 0) {
 
@@ -81,15 +88,12 @@ public class Driver {
 
                 }
 
-            } else {
-
-                scanner.next();
-
             }
 
-            System.out.println("Invalid age. Please enter a valid positive number.");
-
+            System.out.println("Invalid age. Please try again.");
+        
         }
+
 
 
         String email;
