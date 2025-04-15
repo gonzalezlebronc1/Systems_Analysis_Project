@@ -299,3 +299,25 @@ Statechart diagrams that models the different states of an object and transition
 
 #### Classes Without State Chart Diagram  
 Certain classes do not need state chart diagrams as they do not meet the requirements or is unecessary.  
+
+1. **Administrator**  
+    a role performing actions, not transitioning through states  
+
+2. **Advisor**  
+    a role, does not transition through distinct states  
+
+3. **Department**  
+    a static entity, does not have a lifecycle  
+
+4. **Grade**  
+    a data object with no state transitions  
+
+5. **Schedule**  
+    a collection of courses, not an entity with states  
+
+6. **Transcript**  
+    a data record, does not change states  
+
+7. **Professor**  
+    a role, performs tasks but does not have state transitions
+    
