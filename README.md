@@ -266,6 +266,13 @@ Due to the requirements of Phase 2 and the time constraints, the following proce
 ---
 
 ### Activity Diagrams  
+The dynamic aspects of the university system workflow from one activity to another based on the use case scenarios found in [Use Case Scenarios](case.md) file.  
+All activity diagrams found in [Activity Diagrams](UML%20Diagrams/Activity%20Diagrams) folder.  
+
+#### Classes Without State Chart Diagram  
+Some use case scenarios may not need an activity diagram if the process is simple, linear, or involves minimal decision points.  
+In such cases, a basic flowchart or textual description may suffice to convey the sequence of actions without the need for a more detailed diagram.  
+
 
 ### Class Diagrams  
 The following is the class diagram of the static structure of the university system  
@@ -275,6 +282,7 @@ The following is the class diagram of the static structure of the university sys
 ### Sequence/Communication Diagrams  
 Sequence interaction diagrams that shows how objects interact with each other over time.  
 Due to the nature and requirements of the project only sequence diagrams were made.  
+All sequence or communication diagrams found in [Sequence.Communication Diagrams](UML%20Diagrams/Sequence.Communication%20Diagrams) folder.  
 
 [Apply for Graduation](UML%20Diagrams/Sequence.Communication%20Diagrams/Apply%20for%20graduation.jpg)  
 [Request Major change](UML%20Diagrams/Sequence.Communication%20Diagrams/Request%20major%20change.jpg)  
@@ -287,6 +295,7 @@ Due to the nature and requirements of the project only sequence diagrams were ma
 
 ### State Chart Diagrams  
 Statechart diagrams that models the different states of an object and transitions based on the class diagrams.  
+All state chart diagrams found in [Statechart Diagrams](UML%20Diagrams/Statechart%20Diagrams) folder.  
 
 [Application](UML%20Diagrams/Statechart%20Diagrams/Application.png)  
 [Course](UML%20Diagrams/Statechart%20Diagrams/Course.png)  
