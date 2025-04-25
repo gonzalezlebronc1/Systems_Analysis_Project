@@ -269,10 +269,14 @@ Due to the requirements of Phase 2 and the time constraints, the following proce
 The dynamic aspects of the university system workflow from one activity to another based on the use case scenarios found in [Use Case Scenarios](case.md) file.  
 All activity diagrams found in [Activity Diagrams](UML%20Diagrams/Activity%20Diagrams) folder.  
 
-#### Classes Without State Chart Diagram  
-Some use case scenarios may not need an activity diagram if the process is simple, linear, or involves minimal decision points.  
-In such cases, a basic flowchart or textual description may suffice to convey the sequence of actions without the need for a more detailed diagram.  
-
+[Apply to the University](UML%20Diagrams/Activity%20Diagrams/StudentEnrollmentActivity.drawio.png)  
+[Scheduling Classes](UML%20Diagrams/Activity%20Diagrams/ClassSchedule.drawio.png)  
+[Withdrawing from a Class](UML%20Diagrams/Activity%20Diagrams/WithdrawalRequest.drawio.png)  
+[Final Class Grade Submission](UML%20Diagrams/Activity%20Diagrams/FinalGrade.drawio.png)  
+[Changing Your Major](UML%20Diagrams/Activity%20Diagrams/MajorChange.drawio.png)  
+[Viewing Your Transcript](UML%20Diagrams/Activity%20Diagrams/Transcript.drawio.png)  
+[Graduation Process](UML%20Diagrams/Activity%20Diagrams/GraduationRequest.drawio.png)  
+[Teaching Schedule Form](UML%20Diagrams/Activity%20Diagrams/TeachingSchedule.drawio.png)  
 
 ### Class Diagrams  
 The following is the class diagram of the static structure of the university system  
